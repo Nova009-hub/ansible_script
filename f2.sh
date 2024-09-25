@@ -31,7 +31,7 @@ function user(){
 
 if [ -z "$x" ] && [ $(sed -n "3p" /etc/os-release) = 'ID="rhel"' ]; then
 	install1
-elif [ -z "$x" ] && [ $(sed -n "3p" /etc/os-release) = 'ID="ubuntu"' ]; then
+elif [ -z "$x" ] && [ $(sed -n "3p" /etc/os-release) = 'NAME="Ubuntu"' ]; then
 	install2
 else
 	echo "not ok"
